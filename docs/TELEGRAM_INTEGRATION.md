@@ -34,9 +34,7 @@ For local development, you can use ngrok to expose your local server to the inte
 5. Register the webhook:
    ```bash
    make register-telegram-webhook WEBHOOK_URL=https://your-ngrok-domain.ngrok.io/telegram_webhook
-   make register-telegram-webhook WEBHOOK_URL=https://84e9-2405-201-21-1823-d000-78a4-d411-bdd8.ngrok-free.app/telegram_webhook
-   ```
-curl -s "https://api.telegram.org/bot<7515290880:AAFHysbvi7s6DXT_NBl9VnIuSAJOiMReDas>/getMe" | jq
+   
 ## Production Deployment
 gcloud config set compute/region asia-south1-a
 
