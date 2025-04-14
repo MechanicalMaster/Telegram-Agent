@@ -1,0 +1,29 @@
+FROM python:3.12.8-slim
+
+WORKDIR /app
+
+# Copy only necessary files for the initial setup
+COPY pyproject.toml uv.lock ./
+
+# Install UV package manager
+RUN pip install --upgrade pip && \
+    pip install -U uv
+
+# Install dependencies with UV to take advantage of the lock file
+ENV UV_RETRY_COUNT=3
+RUN uv pip install --system -e .
+
+# Install gunicorn explicitly
+RUN pip install gunicorn uvicorn
+
+# Copy the rest of the application
+COPY . .
+
+# Make sure the package is properly installed
+RUN pip install -e .
+
+# Ensure app directory is in Python path
+ENV PYTHONPATH=/app
+
+# Set Gunicorn to run on 0.0.0.0:8081 with increased timeout
+CMD ["gunicorn", "ai_companion.interfaces.telegram.webhook_endpoint:app", "--workers", "2", "--worker-class", "uvicorn.workers.UvicornWorker", "--bind", "0.0.0.0:8081", "--timeout", "120"] 
