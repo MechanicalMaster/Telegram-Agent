@@ -1,6 +1,5 @@
 <p align="center">
-    <img alt="logo" src="img/ava_final_design.gif" width=1000 />
-    <h1 align="center">🤖 Ava 🤖</h1>
+    <h1 align="center">🤖 Telegram Agent 🤖</h1>
     <h3 align="center">A Modern Conversational AI Agent</h3>
 </p>
 
@@ -22,7 +21,7 @@ Ava is an advanced AI agent inspired by the film [Ex Machina](https://www.imdb.c
 
 ## Who is this for?
 
-This project is for Software Engineers, ML Engineers, and AI Engineers who want to build production-ready conversational agents with advanced memory, scheduling, and multi-modal capabilities.
+This project is supposed to be demo of the original eva bot, heavily modified to work with Telegram and additinal features like observability via Langfuse.
 
 ## Features
 
@@ -88,29 +87,6 @@ This project is for Software Engineers, ML Engineers, and AI Engineers who want 
 | Together AI        | Image generation                                                 |
 | dateparser, pytz   | Robust natural language time parsing in IST                      |
 
-## Contributors
-
-<table>
-  <tr>
-    <td align="center"><img src="https://github.com/MichaelisTrofficus.png" width="100" style="border-radius:50%;"/></td>
-    <td>
-      <strong>Miguel Otero Pedrido | Senior ML / AI Engineer </strong><br />
-      <i>Founder of The Neural Maze. Rick and Morty fan.</i><br /><br />
-      <a href="https://www.linkedin.com/in/migueloteropedrido/">LinkedIn</a><br />
-      <a href="https://www.youtube.com/@TheNeuralMaze">YouTube</a><br />
-      <a href="https://theneuralmaze.substack.com/">The Neural Maze Newsletter</a>
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><img src="https://github.com/jesuscopado.png" width="100" style="border-radius:50%;"/></td>
-    <td>
-      <strong>Jesús Copado | Senior ML / AI Engineer </strong><br />
-      <i>Equal parts cinema fan and AI enthusiast.</i><br /><br />
-      <a href="https://www.youtube.com/@jesuscopado-en">YouTube</a><br />
-      <a href="https://www.linkedin.com/in/copadojesus/">LinkedIn</a><br />
-    </td>
-  </tr>
-</table>
 
 ## License
 
